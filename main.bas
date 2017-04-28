@@ -39,7 +39,7 @@ Public Function xy2table(x As Integer, y As Integer) As String
     letter = Array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
     If x <= 26 Then
         out = letter(x - 1)
-rem perhaps x mod 27 will be better?
+    'perhaps x mod 27 will be better?
     ElseIf x Mod 26 = 0 Then
         out = letter(x \ 26 - 2) & "Z"
     Else
